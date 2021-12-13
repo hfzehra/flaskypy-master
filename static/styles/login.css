@@ -1,0 +1,108 @@
+@import url(//fonts.googleapis.com/css?family=Lato:100,300,300i,400);
+body {
+    box-sizing: border-box;
+    font-family: Lato, Arial;
+    text-align: center;
+    color: #eee;
+    background: url('../styles/b.jpg');
+    font-family: 'Patrick Hand', cursive;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #eee;
+    font-weight: 400;
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: 4px;
+}
+
+h4 {
+    margin-top: 1em;
+    color: #eee;
+    font-size: 150%;
+    font-weight: 300;
+    text-align: center;
+}
+
+button {
+    display: inline;
+    background: #000000;
+    color: #000000;
+    border: 0;
+    padding: 4px;
+    border-radius: 5%;
+}
+
+input {
+    display: grid;
+    align-items: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 10px;
+    width: 70%;
+    outline: none;
+    padding: 15px;
+    border: 3px solid rgb(2, 3, 54);
+    border-radius: 30px;
+    opacity: 100%;
+}
+
+small {
+    display: inline-block;
+    margin-top: 5px;
+    color: white;
+    font-size: 100%;
+    color: #fff;
+}
+
+.login-box {
+    padding: 1em 1em 1em 1em;
+    margin: auto;
+    text-align: center;
+    display: block;
+    background-color: #242627;
+    /*border: 1px dashed white;*/
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    border: 3px solid rgb(0, 0, 0);
+}
+.title{
+    margin:auto;
+    font-size: xx-large;
+    margin-top: 130px;
+}
+.outer-box {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    background: #242627;
+    border-radius: 10%;
+    width: 30%;
+    height: 20em;
+    height: auto;
+    opacity: 70%;
+}
+
+#btn-login {
+    display: grid;
+    text-align: center;
+    width: 40%;
+    height: 20px;
+    margin-top: 2.0em;
+    border-radius: 4px;
+    background-color: #ffc800;
+    color: #fff;
+    border-radius: 20%;
+    outline: none;
+    padding: 20px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    opacity: 100%;
+}
+a{
+  color: #00d7ff;
+}

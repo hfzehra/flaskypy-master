@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% from 'field-macro.html' import displayField %}
+{% extends "prelogin-layout.html" %}
+
+{% block title %}Register {% endblock title%}
+
+{% block content %}
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/login.css') }}">
+<div class="title">
+    <h1>FLASKYPY</h1>
+</div>
+<div class="outer-box">
+    <div class="login-box">
+        <h3 class="login-text">Get started!</h3>
+        <p>First time here? Register to start using Flaskypy</p>
+        <center>
+        <form action="{{ url_for('index') }}", method="POST">
+            {{ displayField(form.username, 'Username', autocomplete="off", autofocus=true) }}
+            {{ displayField(form.password, 'Password') }}
+            {{ displayField(form.confirm_pswd, 'Retype Password') }}
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-warning">
+            </div>
+            {{ form.csrf_token }}
+        </form>
+
+        <hr>
+        <p>Already registered? <a href={{url_for('login')}}>Login here</a>.</p>
+
+         </center>
+    </div>
+</div>
+
+
+</html>
+
+{% endblock %}
